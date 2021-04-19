@@ -32,18 +32,19 @@ In order to rapidly, frequently and reliably deploy long-lived applications we n
 </ul>
 
 What features/attributes(ilities) should software have?
-DevOps
-- Testability
-- Deployability
-- Maintainability
 
-Autonomous  teams - need
-- modularity (loosely coupled - conway's law - if you want to have loosely coupled teams,
-you need to have a loosely coupled architecture)
+In order to succeed at <b>DevOps</b> the software needs to be:
+<li>Testability</li>
+<li>Deployability</li>
+<li>Maintainability</li>
 
-Long lived apps -
-modularity
-evolvoability
+In order to have <b>Autonomous teams</b> the software needs to have
+<li>modularity (loosely coupled - conway's law - if you want to have loosely coupled teams,
+    you need to have a loosely coupled architecture)</li>
+
+In order to build <b>Long lived apps</b> the software needs to have
+<li>modularity</li>
+<li>evolvoability</li>
 
 Even though most apps are modular, all the modules get packaged up into a single unit. Thus, it makes it
 a monolith again. Monolith is not an anti-pattern. You can have a monolithic app that is highly testable, deployable and
@@ -54,8 +55,25 @@ Thus, the rate of change grows. We can try to modularize but everyone is essenti
 code base.
 Then app becomes a big ball of mud - haphazardly structured, sprawling, slopyy, duct-tape and bailing wire,
 spaghetti code jungle. App cannot fit in mental model of developers.
+<img src="./images/AppComplexity.PNG"></br>
+Where you need to be?
+<img src="./images/AppComplexity-Where%20you%20need%20to%20be.PNG"/></br>
+This becomes an existential threat. You need to be developing and deploying faster and faster
+not slower and slower. Thus, there is a gap between where you are and where you need to be.
 
-<img src="./images/AppComplexity.PNG">
+<i>The microservice architecture is an architecture style that structures an app as a set of services.</i>
+Each service is: (the word micro sometimes conjures up a vision that that app only has to be 100 or so lines long
+and need to be developed within 2 weeks)
+<li>Highly maintainable</li>
+<li>loosely coupled</li>
+<li>Independently deployable</li>
+<li>Organized around business capabilities</li>
+<li>Owned by a small team (5-9 members of a cross-functional team)</li>
+If we have a service that needs a larger team then that service is too large.
+You need to have highly productive small teams.
+Have coarse grained teams - start out with only one microservice per team. Only introduce
+more services per team only if it solves a problem. Split a service only if it can accelerate
+development and testing.
 </p>
 </body>
 </html>
