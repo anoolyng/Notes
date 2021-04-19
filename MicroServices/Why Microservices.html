@@ -26,9 +26,10 @@ current. If apps are built using ancient technologies, then they cannot be moder
 In order to rapidly, frequently and reliably deploy long-lived applications we need three things
 (a triangle with each attribute in a corner)
 
-Process - Lean + DevOps + CI/CD
-Organization - Small, autonomous teams (small, 5-9 person cross functional)
-Software architecture - microservices
+<ul><li>Process - Lean + DevOps + CI/CD</li>
+    <li>Organization - Small, autonomous teams (small, 5-9 person cross functional)</li>
+    <li>Software architecture - microservices</li>
+</ul>
 
 What features/attributes(ilities) should software have?
 DevOps
@@ -45,7 +46,16 @@ modularity
 evolvoability
 
 Even though most apps are modular, all the modules get packaged up into a single unit. Thus, it makes it
-a monolith again.
+a monolith again. Monolith is not an anti-pattern. You can have a monolithic app that is highly testable, deployable and
+maintainable etc, it is not always a problem.
+
+Successful apps have a habit of growing. Over time, the app gets bigger. The teams that work on the app grows.
+Thus, the rate of change grows. We can try to modularize but everyone is essentially contributing to the same
+code base.
+Then app becomes a big ball of mud - haphazardly structured, sprawling, slopyy, duct-tape and bailing wire,
+spaghetti code jungle. App cannot fit in mental model of developers.
+
+<img src="./images/AppComplexity.PNG">
 </p>
 </body>
 </html>
