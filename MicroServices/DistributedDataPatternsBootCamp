@@ -1,0 +1,11 @@
+According to Marc Andreesen, Software is eating the world.
+Everything is being done now by software and at the same time the market
+forces that govern the industries and getting more complex and demand faster response.
+Thus, the software we need to build needs to cater to these market needs.
+Thus there are 2 important metrics to measure:
+(1) Velocity
+    - Lead time: Time between when a developer commits code and when it is deployed in prod.
+    -Deployments: Number of deployments per dev per day
+(2) Reliability
+    -Number of defects per change  - how many defects are introduced per change
+    -Mean time to resolve defects - how long does it take to resolve defects
