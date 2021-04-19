@@ -7,5 +7,18 @@ Thus there are 2 important metrics to measure:
     - Lead time: Time between when a developer commits code and when it is deployed in prod.
     -Deployments: Number of deployments per dev per day
 (2) Reliability
-    -Number of defects per change  - how many defects are introduced per change
-    -Mean time to resolve defects - how long does it take to resolve defects
+    -Number of defects per change (change failure rate)  - % of defects per outage
+    -Mean time to resolve defects - how long does it take to resolve defects from a deployment failure.
+
+Mission critical applications tend to live for long time say like 10 years or so. The technology landscape
+changes during the time so it is important to build applications so they can be modernized and can become
+current. If apps are built using ancient technologies, then they cannot be modernized.
+
+In order to rapidly, frequently and reliably deploy long-lived applications we need three things
+ (a triangle with each attribute in a corner)
+
+Process - Lean + DevOps + CI/CD
+Organization - Small, autonomous teams (small, 5-9 person cross functional)
+Software architecture - microservices
+
+What
